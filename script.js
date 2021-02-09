@@ -77,7 +77,7 @@ const displayCountryInfo = country => {
                 <h6 class="text-color mt-4">Area: ${country.area}</h6>
                 <h6 class="text-color">Population: ${country.population}</h6>
                 <h6 class="text-color">Offical Name: ${country.altSpellings[1]}</h6>
-                <h6 class="text-color">Offical Name: ${country.languages[0].name}</h6>
+                <h6 class="text-color">Language: ${country.languages[0].name}</h6>
                 <h6 class="text-color">Demonym: ${country.demonym}</h6>
             </div>
         </div>
