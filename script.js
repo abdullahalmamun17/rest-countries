@@ -17,7 +17,6 @@ const displayCountries = data => {
                         <div class="card-body p-2 mt-3">
                             <h6 class="card-title text-color">Country: ${country.name}</h6>
                             <h6 class="card-title text-color">Capital: ${country.capital}</h6>
-                            <h6 class="card-title text-color">Region: ${country.region}</h6>
                             <a href="#" class="btn btn-outline-success mt-3 mb-0" onclick="searchCountryInfo('${country.alpha2Code}')">More Info</a>
                         </div>
                         </div>`
@@ -47,7 +46,6 @@ const displayCountry = country => {
                         <div class="card-body p-0 pt-3">
                             <h6 class="card-title text-color">Country: ${country.name}</h6>
                             <h6 class="card-title text-color">Capital: ${country.capital}</h6>
-                            <h6 class="card-title text-color">Region: ${country.region}</h6>
                             <a href="#" class="btn btn-outline-success mt-3 mb-0" onclick="searchCountryInfo('${country.alpha2Code}')">More Info</a>
                         </div>
                         </div>`
@@ -74,8 +72,13 @@ const displayCountryInfo = country => {
             <div class="card-body" id = "ingredient-body">
                 <h5 class="card-title fw-bold text-color">Country: ${country.name}</h5>
                 <h6 class="fw-bold mt-4 text-color">Capital: ${country.capital}</h6>
-                <h6 class="fw-bold mt-4 text-color">Capital: ${country.capital}</h6>
-                <h6 class="fw-bold mt-4 text-color">Capital: ${country.capital}</h6
+                <h6 class="card-title mt-4 text-color">Region: ${country.region}</h6>
+                <h6 class="card-title text-color">Sub-Region: ${country.subregion}</h6>
+                <h6 class="text-color mt-4">Area: ${country.area}</h6>
+                <h6 class="text-color">Population: ${country.population}</h6>
+                <h6 class="text-color">Offical Name: ${country.altSpellings[1]}</h6>
+                <h6 class="text-color">Offical Name: ${country.languages[0].name}</h6>
+                <h6 class="text-color">Demonym: ${country.demonym}</h6>
             </div>
         </div>
     `
