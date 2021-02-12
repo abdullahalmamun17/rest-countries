@@ -44,6 +44,8 @@ body{
     .inputDiv{
         width: 80% !important;
     }
-	.country-info-card{ width: 100%; }
+    .country-info-card{
+        width: 100%;
+    }
 
 }
